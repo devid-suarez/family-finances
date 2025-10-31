@@ -9,9 +9,13 @@ class Family {
 
   factory Family.fromFirestore(DocumentSnapshot doc) {
     Map data = doc.data() as Map<String, dynamic>;
+    String imageUrl = data['imageUrl'] ?? '';
+    if (imageUrl.isEmpty) {
+      imageUrl = 'https://via.placeholder.com/150';
+    }
     return Family(
       name: data['name'] ?? '',
-      imageUrl: data['imageUrl'] ?? '',
+      imageUrl: imageUrl,
     );
   }
 }
