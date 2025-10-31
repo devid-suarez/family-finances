@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart' hide Transaction;
 import 'package:intl/intl.dart';
-import 'package:myapp/models/transaction.dart';
-import 'package:myapp/screens/add_transaction_screen.dart';
+import 'package:family_finances/models/transaction.dart';
+import 'package:family_finances/screens/add_transaction_screen.dart';
 
 class GroupDetailScreen extends StatelessWidget {
   final String familyGroupId;
