@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:myapp/features/auth/presentation/screens/login_screen.dart';
 import 'package:myapp/main.dart';
 import 'package:myapp/screens/add_family_group_screen.dart';
 import 'package:myapp/screens/group_detail_screen.dart';
@@ -24,6 +25,15 @@ class HomeScreen extends StatelessWidget {
             ),
             onPressed: () => themeProvider.toggleTheme(),
             tooltip: 'Toggle Theme',
+          ),
+          IconButton(
+            icon: const Icon(Icons.login),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const LoginScreen()),
+              );
+            },
+            tooltip: 'Login',
           ),
         ],
       ),
