@@ -15,9 +15,11 @@ This document outlines the style, design, and features of the Family Finances ap
     *   `firebase_core`
     *   `provider`
     *   `google_fonts`
+    *   `carousel_slider`
 *   **UI**: 
     *   Basic Material 3 Theming (Light/Dark mode).
-    *   `HomeScreen` with a welcome message.
+    *   `HomeScreen` with a welcome message and an image carousel at the top.
+    *   `HomeCarousel` widget displaying three images.
 
 ## Current Goal: Family Group Creation
 

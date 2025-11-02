@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:myapp/features/auth/presentation/screens/login_screen.dart';
-import 'package:myapp/main.dart';
-import 'package:myapp/screens/add_family_group_screen.dart';
-import 'package:myapp/screens/group_detail_screen.dart';
+import 'package:family_finances/features/auth/presentation/screens/login_screen.dart';
+import 'package:family_finances/main.dart';
+import 'package:family_finances/screens/add_family_group_screen.dart';
+import 'package:family_finances/screens/group_detail_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

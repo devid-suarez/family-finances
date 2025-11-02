@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:intl/intl.dart';
-import 'package:myapp/models/transaction.dart';
+import 'package:family_finances/models/transaction.dart';
 
 class AddTransactionScreen extends StatefulWidget {
   final String familyGroupId;
